@@ -1,36 +1,5 @@
-<!DOCTYPE html>
 <html>
     <head>
-        <script type="text/javascript">
-            /*
-            var clickFlag1 = true;
-            var clickFlag2 = false;
-            function changeFlag1() {
-                if(clickFlag1 == false){
-                    clickFlag2 = false;
-                    document.getElementById("button2").className='menuDefault';
-                    document.getElementById("nature").style.display="none";
-                    clickFlag1 = !clickFlag1;
-                    if(clickFlag1==true){
-                        document.getElementById("button1").className='menuClicked';
-                        document.getElementById("home").style="";
-                    }                
-                }
-            };
-            function changeFlag2() {
-                if(clickFlag2 == false){
-                    clickFlag1 = false;
-                    document.getElementById("button1").className='menuDefault';
-                    document.getElementById("home").style.display="none";
-                    clickFlag2 = !clickFlag2;
-                    if(clickFlag2==true){
-                        document.getElementById("button2").className='menuClicked';
-                        document.getElementById("nature").style="";
-                    }
-                }
-            }
-            */
-        </script>
         <style>
             .menuClicked{
                 color: black;
@@ -46,12 +15,12 @@
         </style>
     </head>
     <body>
-        <div style="position: relative; margin-top: 40px;">
-            <div style ="position: absolute; z-index: 9999; left: 0; right: 0">
-                <div style="text-align:center; font-size: 40px; margin-top: 5px; font-family: Georgia;">
+        <div style="width:640px; height:90px; margin:auto; margin-top: 30px;">
+            <div style="text-align:center;border:2px solid black; margin:auto; width:560px; height:90px; ">
+                <div style="text-align:center; font-size: 40px; margin-top: 5px; font-family: Georgia; left: 200px; right: 200px; white-space: nowrap;">
                     James Jantz
                 </div>
-                <div style="text-align:center; margin-top: 8px; font-family: Georgia; font-size: 13px;">
+                <div style="text-align:center; margin-top: 8px; font-family: Georgia; font-size: 13px; white-space: nowrap; left: 115px; right: 115px;">
                     <span class="menuDefault"><a  class="menuDefault" href="./home.html" target="_self"><i>home</i></a></span>
                     <span id="button2" class="menuClicked" style="margin-left:15px" onclick=""><i>nature</i></span>
                     <span class="menuDefault" style="margin-left:15px"><i>urban</i></span>
@@ -59,39 +28,33 @@
                     <span class="menuDefault" style="margin-left:15px"><i>bio</i></span>
                     <span class="menuDefault" style="margin-left:15px"><i>photo albums</i></span>
                     <span class="menuDefault" style="margin-left:15px"><i>book online</i></span>
-                </div>            
-            </div>
-            <div style="text-align:center; position:absolute; z-index: -1; left: 0; right: 0">
-                <canvas id="testCanvas" width="560" height="90" style="text-align:center;border:2px solid black;">
-                </canvas>
-            </div>
-            <div style="position: absolute; z-index: -1; margin-top: 130px; text-align: center; left: 0; right:0;">
-                <div id="nature">
-                    <div style="display:flex; margin-top: -10px;">
-                        <div style="margin:auto; width: 670px;">
-                            <div style="font-size: 25px; font-family: Georgia; text-align: left; margin-bottom: 10px;">Nature</div>
-                        </div>
-                    </div>
-                    <div style="white-space: nowrap">
-                        <img src="./images/koalas.jpg" alt="" width="330px" height="330px">
-                        <img src="./images/horses.jpg" alt="" width="330px" height="330px">
-                    </div>
-                    <div style="white-space: nowrap">
-                        <img src="./images/geko.jpg" alt="" width="330px" height="330px">
-                        <img src="./images/shark.jpg" alt="" width="330px" height="330px">
-                    </div>
-                </div>
-                <div style="text-align:center; color:rgb(135, 133, 133); font-family: Georgia; margin-top: 30px;">
-                    <i>© 2023 by James Jantz</i>
-                </div>
-                <div style="text-align: center; margin-top: 20px;">
-                    <img src="./images/facebook.png" alt="" width="30px" height="30px">
-                    <img src="./images/twitter.png" alt="" width="30px" height="30px" style="margin-left:20px">
-                    <img src="./images/instagram.png" alt="" width="30px" height="30px" style="margin-left:20px">
-                </div>
+                </div> 
             </div>
         </div>
-        
-        
+        <div style=" margin-top: 60px; text-align: center; left: 0; right:0;">
+            <div id="nature">
+                <div style="display:flex; margin-top: -10px;">
+                    <div style="margin:auto; width: 670px;">
+                        <div style="font-size: 25px; font-family: Georgia; text-align: left; margin-bottom: 10px;">Nature</div>
+                    </div>
+                </div>
+                <div style="white-space: nowrap">
+                    <img src="./images/koalas.jpg" alt="" width="330px" height="330px">
+                    <img src="./images/horses.jpg" alt="" width="330px" height="330px">
+                </div>
+                <div style="white-space: nowrap">
+                    <img src="./images/geko.jpg" alt="" width="330px" height="330px">
+                    <img src="./images/shark.jpg" alt="" width="330px" height="330px">
+                </div>
+            </div>
+            <div style="text-align:center; color:rgb(135, 133, 133); font-family: Georgia; margin-top: 30px;">
+                <i>© 2023 by James Jantz</i>
+            </div>
+            <div style="text-align: center; margin-top: 20px;">
+                <img src="./images/facebook.png" alt="" width="30px" height="30px">
+                <img src="./images/twitter.png" alt="" width="30px" height="30px" style="margin-left:20px">
+                <img src="./images/instagram.png" alt="" width="30px" height="30px" style="margin-left:20px">
+            </div>
+        </div>
     </body>
 </html>
